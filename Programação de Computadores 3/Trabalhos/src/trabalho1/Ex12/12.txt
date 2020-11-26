@@ -1,0 +1,1 @@
+Porque havia elementos repetidos que não foram inseridos e consequentemente acabou afetando na média.
