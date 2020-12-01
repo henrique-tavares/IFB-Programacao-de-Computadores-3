@@ -1,6 +1,6 @@
 package trabalho1.Ex14;
 
-import java.util.Calendar;
+import java.time.Instant;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -12,7 +12,7 @@ public class Main {
         var map = new HashMap<Integer, Aluno>();
         var set = new HashSet<Aluno>();
 
-        for (int i = 1; i <= 100_000; i++) {
+        for (int i = 0; i <= 100_000; i++) {
             var aluno = new Aluno("Aluno #" + i, Integer.toString(i), new Date());
 
             map.put(i, aluno);
@@ -24,14 +24,14 @@ public class Main {
         System.out.println("\nProcurando pelo aluno de RG: " + key);
         var aluno = new Aluno("Aluno #" + key, Integer.toString(key), new Date());
 
-        var startMap = Calendar.getInstance().getTimeInMillis();
-        map.containsValue(aluno);
-        var finisedMap = Calendar.getInstance().getTimeInMillis();
-        System.out.println("\nHashMap encontrou em " + (finisedMap - startMap) + "ms");
+        var startMap = Instant.now().getNano();
+        map.containsKey(key);
+        var finisedMap = Instant.now().getNano();
+        System.out.println("\nHashMap encontrou em " + ((finisedMap - startMap) / 1_000) + "µs");
 
-        var startSet = Calendar.getInstance().getTimeInMillis();
+        var startSet = Instant.now().getNano();
         set.contains(aluno);
-        var finishedSet = Calendar.getInstance().getTimeInMillis();
-        System.out.println("\nHashSet encontrou em " + (finishedSet - startSet) + "ms");
+        var finishedSet = Instant.now().getNano();
+        System.out.println("\nHashSet encontrou em " + ((finishedSet - startSet) / 1_000) + "µs");
     }
 }
