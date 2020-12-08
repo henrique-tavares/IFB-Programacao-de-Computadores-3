@@ -1,0 +1,1 @@
+A maior diferença é que a classe Vector é sincronizada, ou seja, thread-safe, enquanto a ArrayList não é sincronizada por padrão.

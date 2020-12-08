@@ -1,0 +1,1 @@
+A maior diferença é que o HashMap aceita valores nulos como chave e valor, enquanto o HashTable não aceita valores nulos.
