@@ -15,16 +15,16 @@ public class Main {
 
         var formatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
 
-        System.out.println(String.format("%-4s|%-25s|%-14s|%-10s|%-12s", "Tipo", "Descrição", "Valor Unitário",
+        System.out.println(String.format("|%-5s|%-25s|%-15s|%-11s|%-15s|", "Tipo", "Descrição", "Valor Unitário",
                 "Quantidade", "Valor Total"));
 
         for (var tuple : list) {
-            System.out.println(String.format("%-4s|%-25s|%-14s|%-10s|%-12s", tuple.a.toString(), tuple.a.getDescricao(),
-                    formatter.format(tuple.a.getValor()), tuple.b,
+            System.out.println(String.format("|%-5s|%-25s|%-15s|%-11s|%-15s|", tuple.a.toString(),
+                    tuple.a.getDescricao(), formatter.format(tuple.a.getValor()), tuple.b,
                     formatter.format(Oficina.calculaServico(tuple.a, tuple.b))));
         }
 
         System.out.println(
-                "\nTotal dos Serviços:" + String.format("%49s", formatter.format(Oficina.calculaServico(list))));
+                "|Total dos Serviços:" + String.format("%56s|", formatter.format(Oficina.calculaServico(list))));
     }
 }
