@@ -1,7 +1,7 @@
 const exercises = {
     "01": "Apresentando mensagens de alerta",
     "02": "Apresentando mensagens de alerta pressionando botão",
-    "03": "Apresentando mensagens de alerta pressionando botão",
+    "03": "Receber 3 números e informar qual é o maior e o menor",
     "04": "Verificar se o usuário é menor de idade",
     "05": "Calcule a média aritmética de 3 números",
     "06": "Calcular o IMC do usuário. Use as TAGs: <input>, <button> e <div>",
