@@ -24,8 +24,7 @@ function findPrimes(qtd) {
 function findNthPrime(nth) {
     const element = document.getElementById('result');
     const primes = findPrimes(nth);
-    console.log(primes);
-    console.log(primes.length);
+
     const nthPrime = primes[ primes.length - 1 ];
 
     element.append(` ${ nthPrime }`);
