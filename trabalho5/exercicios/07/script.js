@@ -3,7 +3,7 @@ function goBack() {
 }
 
 function calculateMultiples(...numbers) {
-    let quantity = document.getElementById('quantity').value;
+    let quantity = Number(document.getElementById('quantity').value);
     let multiples = [];
 
     for (let i = 1; multiples.length < quantity; i++) {

@@ -13,9 +13,9 @@ function fibonacci(num) {
 }
 
 function fibonacciSum() {
-    let quantity = document.getElementById('quantity').value;
+    let quantity = Number(document.getElementById('quantity').value);
     let fib = fibonacci(quantity);
     let sum = fib.reduce((a, b) => a + b);
 
-    document.getElementById('fib-result').innerText = sum;
+    document.getElementById('fib-result').innerText = sum.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
 }

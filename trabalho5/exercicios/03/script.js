@@ -17,11 +17,11 @@ function findMinMax() {
     let numbersElements = document.getElementsByClassName('number-input');
     let numbers = [];
     for (numberElement of numbersElements) {
-        numbers.push(numberElement.value);
+        numbers.push(Number(numberElement.value));
     }
 
     let [ min, max ] = minMax(numbers);
 
-    document.getElementById('maior').querySelector('h5').innerText = max;
-    document.getElementById('menor').querySelector('h5').innerText = min;
+    document.getElementById('maior').querySelector('h5').innerText = max.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
+    document.getElementById('menor').querySelector('h5').innerText = min.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
 }

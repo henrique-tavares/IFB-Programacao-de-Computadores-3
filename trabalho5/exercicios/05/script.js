@@ -2,7 +2,7 @@ function goBack() {
     location.href = '../../';
 }
 
-function findMinMax() {
+function findMean() {
     let numbersElements = document.getElementsByClassName('number-input');
     let numbers = [];
     for (numberElement of numbersElements) {
@@ -11,5 +11,5 @@ function findMinMax() {
 
     let mean = numbers.reduce((a, b) => a + b) / numbers.length;
 
-    document.getElementById('media').querySelector('h5').innerText = mean.toFixed(2);
+    document.getElementById('media').querySelector('h5').innerText = mean.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
 }

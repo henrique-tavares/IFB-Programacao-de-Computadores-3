@@ -29,7 +29,7 @@ function calculateIMC() {
 
     let imc = weight / (height ** 2);
 
-    document.getElementById('imc').querySelector('h5').innerText = imc.toFixed(2);
+    document.getElementById('imc').querySelector('h5').innerText = imc.toLocaleString('pt-BR', { maximumFractionDigits: 2 });
     document.getElementById('imc-classification').innerText = getIMCClassification(imc);
 
 }

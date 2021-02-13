@@ -27,5 +27,5 @@ function findNthPrime(nth) {
 
     const nthPrime = primes[ primes.length - 1 ];
 
-    element.append(` ${ nthPrime }`);
+    element.append(` ${ nthPrime.toLocaleString('pt-BR', { maximumFractionDigits: 2 }) }`);
 }
