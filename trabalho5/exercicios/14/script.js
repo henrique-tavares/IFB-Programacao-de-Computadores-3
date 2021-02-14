@@ -30,7 +30,7 @@ function exponentiation() {
         let equalElement = document.createElement('div');
         equalElement.innerText = '=';
 
-        currentResult *= base;
+        currentResult = base ** i;
 
         let exponentiationElement = document.createElement('div');
         exponentiationElement.innerText = `${ currentResult.toLocaleString('pt-BR', { maximumFractionDigits: 2 }) }`;
