@@ -29,7 +29,7 @@ function createMatrix() {
     const calculateDiagonalButton = document.createElement('input');
     calculateDiagonalButton.type = 'button';
     calculateDiagonalButton.className = 'button';
-    calculateDiagonalButton.value = 'Calcular a soma da diagonal';
+    calculateDiagonalButton.value = 'Calcular a soma das diagonais';
     calculateDiagonalButton.setAttribute('onclick', 'calculateDiagonal()');
 
     matrix.insertAdjacentElement('afterend', calculateDiagonalButton);
