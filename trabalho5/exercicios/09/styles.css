@@ -107,3 +107,23 @@ footer span {
   font-size: 16px;
   color: #EFEFF5;
 }
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 32px;
+    justify-self: center;
+  }
+
+  header h2 {
+    font-size: 14px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  footer span {
+    font-size: 14px;
+    color: #EFEFF5;
+  }
+}
