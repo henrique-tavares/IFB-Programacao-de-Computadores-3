@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function fibonacci(num) {
     if (num <= 0) {
         return [ 0 ];

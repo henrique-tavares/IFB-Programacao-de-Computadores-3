@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function verifyAge() {
     let age = document.getElementById('age').value;
 

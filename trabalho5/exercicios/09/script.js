@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function findPrimes(qtd) {
     if (qtd <= 0) {
         return 0;

@@ -1,8 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
-
 function exponentiation() {
     const base = Number(document.getElementById('base').value);
     const exponent = Math.floor(Number(document.getElementById('exponent').value));
@@ -21,7 +16,6 @@ function exponentiation() {
 
         preExpressionElement.appendChild(currentExponentElement);
         preExpressionElement.append(':');
-
 
         let expressionElement = document.createElement('div');
         expressionElement.innerText = `${ currentResult.toLocaleString('pt-BR', { maximumFractionDigits: 2 }) } x ${ base.toLocaleString('pt-BR', { maximumFractionDigits: 2 }) }`;

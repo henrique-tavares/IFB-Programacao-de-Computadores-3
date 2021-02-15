@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function findPrimes(limit) {
     let primes = [ 2 ];
 

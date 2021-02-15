@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function findDelta() {
     const a = Number(document.getElementById('a').value);
     const b = Number(document.getElementById('b').value);

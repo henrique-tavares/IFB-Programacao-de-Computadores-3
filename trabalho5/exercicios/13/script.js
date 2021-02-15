@@ -1,8 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
-
 function exponentiation() {
     const base = Number(document.getElementById('base').value);
     const exponent = Number(document.getElementById('exponent').value);

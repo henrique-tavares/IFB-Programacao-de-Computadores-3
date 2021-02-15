@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function minMax(arr) {
     let min, max;
 

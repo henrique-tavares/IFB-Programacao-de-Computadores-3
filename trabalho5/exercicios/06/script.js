@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function getIMCClassification(imc) {
     if (imc < 18.5) {
         return "Magreza";

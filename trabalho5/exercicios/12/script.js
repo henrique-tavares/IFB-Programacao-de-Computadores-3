@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function reverseString() {
     const text = document.getElementById('string').value;
     let reversedText = '';

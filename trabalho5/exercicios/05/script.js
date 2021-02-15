@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function findMean() {
     let numbersElements = document.getElementsByClassName('number-input');
     let numbers = [];

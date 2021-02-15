@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function sortString() {
     const text = document.getElementById('string').value;
     const sortedText = text.split('').sort().join('');

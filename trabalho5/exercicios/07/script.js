@@ -1,7 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
 function calculateMultiples(...numbers) {
     let quantity = Number(document.getElementById('quantity').value);
     let multiples = [];

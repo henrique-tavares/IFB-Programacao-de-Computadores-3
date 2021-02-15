@@ -1,8 +1,3 @@
-function goBack() {
-    location.href = '../../';
-}
-
-
 function createMatrix() {
     const lines = Number(document.getElementById('lines').value);
     const columns = Number(document.getElementById('columns').value);
