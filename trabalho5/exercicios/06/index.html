@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-  </style>
 
-  <title>Trabalho 05</title>
-</head>
-<body>
-  <header>
-    <div class="pre-title-container">
-      <img src="../../back-arrow.svg" alt="back-arrow" onclick="goBack()" width="50" height="50">
-      <div class="pre-title">
-        <h3>Programação de Computadores 3</h3>
-        <h2>Trabalho 05</h2>
-      </div>
-    </div>
-    <h1 class="title">JavaScript Básico</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
 
-  <main>
-    <div class="title">
-      <h1>Exercício 06</h1>
-      <h3>Calcular o IMC do usuário. Use as TAGs: &lt;input&gt;, &lt;button&gt; e &lt;div&gt;</h3>
-    </div>
+    <title>Trabalho 05</title>
+  </head>
 
-    <section>
-      <fieldset>
-        <legend>Informe seus dados</legend>
-        
-        <div class="inputs-container">
-          <label for="weight">Peso:</label>
-          <input type="number" class="number-input" id="weight" placeholder="..." >
-          <span>Kg</span>
-
-          <label for="height">Altura:</label>
-          <input type="number" class="number-input" id="height" placeholder="...">
-          <span>m</span>
+  <body>
+    <header>
+      <div class="pre-title-container">
+        <a href="../../">
+          <img src="../../back-arrow.svg" alt="back-arrow" width="50" height="50">
+        </a>
+        <div class="pre-title">
+          <h3>Programação de Computadores 3</h3>
+          <h2>Trabalho 05</h2>
         </div>
-      </fieldset>
-      
-      <button onclick="calculateIMC()">
-        Calcular
-      </button>
-      
-      <div class="results-container">
-        <div class="result" id="imc">
-          <h3>IMC:</h3>
-          <h5></h5>
-        </div>
-        <span id="imc-classification"></span>
       </div>
-    </section>
-  </main>
+      <h1 class="title">JavaScript Básico</h1>
+    </header>
 
-  <footer>
-    <span>Desenvolvido por <strong>Henrique Tavares Aguiar</strong></span>
-    <a href="https://github.com/henrique-tavares">
-      <img src="../../GitHub-Mark-Light-32px.png" alt="GitHub">
-    </a>
-  </footer>
-  <script src="script.js"></script>
-</body>
+    <main>
+      <div class="title">
+        <h1>Exercício 06</h1>
+        <h3>Calcular o IMC do usuário. Use as TAGs: &lt;input&gt;, &lt;button&gt; e &lt;div&gt;</h3>
+      </div>
+
+      <section>
+        <fieldset>
+          <legend>Informe seus dados</legend>
+
+          <div class="inputs-container">
+            <label for="weight">Peso:</label>
+            <input type="number" class="number-input" id="weight" placeholder="...">
+            <span>Kg</span>
+
+            <label for="height">Altura:</label>
+            <input type="number" class="number-input" id="height" placeholder="...">
+            <span>m</span>
+          </div>
+        </fieldset>
+
+        <button onclick="calculateIMC()">
+          Calcular
+        </button>
+
+        <div class="results-container">
+          <div class="result" id="imc">
+            <h3>IMC:</h3>
+            <h5></h5>
+          </div>
+          <span id="imc-classification"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Desenvolvido por <strong>Henrique Tavares Aguiar</strong></span>
+      <a href="https://github.com/henrique-tavares">
+        <img src="../../GitHub-Mark-Light-32px.png" alt="GitHub">
+      </a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+
 </html>
