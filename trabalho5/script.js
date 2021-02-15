@@ -33,5 +33,5 @@ for (exercise in exercises) {
     let element = document.getElementById(exercise);
     element.appendChild(strongNode);
     element.appendChild(spanNode);
-    element.setAttribute('href', `/exercicios/${ exercise }`);
+    element.setAttribute('href', `/exercicios/${ exercise }/`);
 }
