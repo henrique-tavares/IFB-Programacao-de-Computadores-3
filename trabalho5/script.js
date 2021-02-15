@@ -33,10 +33,5 @@ for (exercise in exercises) {
     let element = document.getElementById(exercise);
     element.appendChild(strongNode);
     element.appendChild(spanNode);
-    element.setAttribute('onclick', `navigate("${ exercise }")`);
-}
-
-function navigate(path) {
-    console.log(path);
-    location.href = `/exercicios/${ path }`;
+    element.setAttribute('href', `/exercicios/${ exercise }`);
 }
