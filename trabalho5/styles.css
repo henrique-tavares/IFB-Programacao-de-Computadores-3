@@ -20,7 +20,7 @@ header {
 
   background: #181834;
   color: #EFEFF5;
-  padding: 1em 0;
+  padding: 1em;
 
 }
 
@@ -75,7 +75,7 @@ header h3 {
 
 .exercise:hover {
   cursor: pointer;
-  
+
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-transform: translate(0, -2.5%) scale(1.05);
   -ms-transform: translate(0, -2.5%) scale(1.05);
