@@ -28,7 +28,7 @@ header {
 .pre-title-container {
   display: flex;
   flex-direction: row;
-  
+
   align-items: center;
 }
 
@@ -148,12 +148,16 @@ section {
 .results-container {
   display: flex;
   flex-direction: row;
+  margin: 20px 0;
 }
 
 .result {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 80vw;
+  word-wrap: break-word;
+  word-break: break-all;
 
   color: #3B3B43;
   font-weight: bold;
