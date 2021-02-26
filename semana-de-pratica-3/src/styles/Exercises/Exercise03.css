@@ -1,0 +1,59 @@
+.ex03 .results-container {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #343034;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ex03 .results-container:empty {
+  padding: 0 !important;
+}
+
+.ex03 .result-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ex03 .result-hr {
+  background: rgba(255, 255, 255, 0.3);
+  height: 1px;
+  border: none;
+}
+
+.ex03 .results {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.ex03 .results h5,
+.ex03 .results p,
+.ex03 .results span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ex03 .result-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ex03 .result-description p {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.ex03 .result-description p+p {
+  margin-left: 5px;
+}
