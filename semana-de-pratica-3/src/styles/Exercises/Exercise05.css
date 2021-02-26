@@ -1,0 +1,50 @@
+.ex05 fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.ex05 legend {
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.ex05 .inputs-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ex05 .inputs-container label {
+  text-align: right;
+}
+
+.ex05 .inputs-container label::after {
+  content: ':';
+}
+
+.ex05 .results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #343034;
+}
+
+.ex05 .results-container:empty {
+  padding: 0 !important;
+}
+
+/* .ex05 .results-container p {
+
+} */
