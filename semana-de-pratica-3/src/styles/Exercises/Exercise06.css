@@ -1,0 +1,78 @@
+.ex06 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ex06 fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.ex06 legend {
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.ex06 .inputs-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 15px 10px;
+  margin-bottom: 20px;
+}
+
+.ex06 .inputs-container label {
+  text-align: right;
+}
+
+.ex06 .inputs-container label::after {
+  content: ':';
+}
+
+.ex06 .sign-in .to-sign-up,
+.ex06 .sign-up .to-sign-in {
+  width: fit-content;
+  margin: 5px 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #343034;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ex06 .sign-in .to-sign-up:active,
+.ex06 .sign-up .to-sign-in:active {
+  background: #433E44;
+}
+
+.ex06 .sign-in .to-sign-up p,
+.ex06 .sign-up .to-sign-in p {
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.ex06 .sign-in .to-sign-up:hover p,
+.ex06 .sign-up .to-sign-in:hover p {
+  text-shadow: 0 0 3px #F06969;
+}
+
+.ex06 .logged {
+  width: 100%;
+  margin: 10px;
+}
+
+.ex06 .greetings {
+  width: fit-content;
+  max-width: 90%;
+  margin: 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: #343034;
+}
