@@ -56,7 +56,6 @@ function Exercise06() {
         if (lsUsers.some(lsUser => lsUser.login === user.login)) {
             alert('Já existe um usuário com esse nome.');
         } else {
-            console.log('teste');
             try {
                 localStorage.setItem(lsUsersKey, JSON.stringify([ ...lsUsers, user ]));
                 alert('Usuário salvo com sucesso!');
