@@ -33,7 +33,7 @@ function Exercise05() {
 
         if (_a === _b && _b === _c) {
             setTriangle('Equilátero');
-        } else if (_a !== _b && _a !== _c && _b !== c) {
+        } else if (_a !== _b && _a !== _c && _b !== _c) {
             setTriangle('Escaleno');
         } else {
             setTriangle('Isósceles');
