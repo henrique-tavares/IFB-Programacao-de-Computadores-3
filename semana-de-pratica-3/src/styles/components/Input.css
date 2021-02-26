@@ -1,0 +1,110 @@
+.input[type=number] {
+  width: 100px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 3px solid #F06969;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  background: #F1E1E1;
+  color: rgba(25, 24, 26, 0.7);
+
+  transition: 0.2s ease;
+}
+
+.input[type=number]::placeholder {
+  color: rgba(25, 24, 26, 0.7);
+  opacity: 1;
+}
+
+.exercise:hover .input[type=number],
+.exercise:focus-within .input[type=number] {
+  box-shadow: -4px 4px 0 #F06969;
+}
+
+.input[type=number]:hover,
+.input[type=number]:focus {
+  box-shadow: -2px 2px 0 #F06969 !important;
+  transform: translate(-2px, 2px);
+}
+
+.input[type=number]:focus,
+.input[type=number]:focus::placeholder {
+  color: rgb(25, 24, 26);
+}
+
+.input[type=text],
+.input[type=password] {
+  width: 200px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 3px solid #F06969;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  background: #F1E1E1;
+  color: rgba(25, 24, 26, 0.7);
+
+  transition: 0.2s ease;
+}
+
+.input[type=text]::placeholder,
+.input[type=password]::placeholder {
+  color: rgba(25, 24, 26, 0.7);
+  opacity: 1;
+}
+
+.exercise:hover .input[type=text],
+.exercise:focus-within .input[type=text],
+.exercise:hover .input[type=password],
+.exercise:focus-within .input[type=password] {
+  box-shadow: -4px 4px 0 #F06969;
+}
+
+.input[type=text]:hover,
+.input[type=text]:focus,
+.input[type=password]:hover,
+.input[type=password]:focus {
+  box-shadow: -2px 2px 0 #F06969 !important;
+  transform: translate(-2px, 2px);
+}
+
+.input[type=text]:focus,
+.input[type=text]:focus::placeholder,
+.input[type=password]:focus,
+.input[type=password]:focus::placeholder {
+  color: rgb(25, 24, 26);
+}
+
+.input[type=button] {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #2D2A2E;
+  color: #F1FDFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: 3px solid #F06969;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.exercise:hover .input[type=button] {
+  cursor: pointer;
+}
+
+.exercise:hover .input[type=button],
+.exercise:focus-within .input[type=button] {
+  box-shadow: -4px 4px 0 #F06969;
+}
+
+.input[type=button]:hover {
+  box-shadow: -2px 2px 0 #F06969 !important;
+  transform: translate(-2px, 2px);
+}
+
+.input[type=button]:active {
+  box-shadow: none !important;
+  transform: translate(-4px, 4px);
+  background: #433E44;
+}

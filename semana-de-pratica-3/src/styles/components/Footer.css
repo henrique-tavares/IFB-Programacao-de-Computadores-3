@@ -1,0 +1,20 @@
+footer {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10%;
+  background: #19181A;
+  box-shadow: 0 -1px 5px rgba(241, 253, 255, 0.8);
+  z-index: 1;
+}
+
+footer strong {
+  text-shadow: 0 0 2px rgba(241, 253, 255, 0.8);
+}
+
+footer a {
+  font-size: 0;
+}
