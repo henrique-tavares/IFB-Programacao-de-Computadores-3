@@ -1,0 +1,65 @@
+.ex04 fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.ex04 legend {
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.ex04 .inputs-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 15px 10px;
+  margin-bottom: 20px;
+}
+
+.ex04 .inputs-container label {
+  text-align: right;
+}
+
+.ex04 .inputs-container label::after {
+  content: ':';
+}
+
+.ex04 .results-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  background: #343034;
+  max-height: 30vh;
+  overflow-y: auto;
+}
+
+.ex04 .results-container:empty {
+  padding: 0 !important;
+}
+
+.ex04 .result-item {
+  margin: 3px 5px;
+}
+
+.ex04 .result-item:first-child::before {
+  content: '[ ';
+}
+
+.ex04 .result-item::after {
+  content: ',';
+}
+
+.ex04 .result-item:last-child::after {
+  content: ' ]';
+}
