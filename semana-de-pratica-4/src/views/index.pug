@@ -1,0 +1,63 @@
+doctype html
+html(lang="pt-br")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Semana de prática 4
+
+    style
+      include ./styles.css
+
+  body
+    header
+      h1 Semana de prática 4
+      span PC3
+
+    - const today = new Date();
+    - const formattedToday = `${today.getFullYear()}-${(today.getMonth() + 1).toLocaleString('pt-BR', {minimumIntegerDigits: 2})}-${today.getDate().toLocaleString('pt-BR', {minimumIntegerDigits: 2})}`
+    main
+      section.form
+        form(action="/" method="post")
+          fieldset 
+            legend Informe os dados
+
+            .input-container
+              label(for="name") Nome
+              input(type="text" name="name" placeholder="..." required maxlength="100")
+
+            .input-container
+              label(for="number") Matrícula
+              input(type="number" name="number" placeholder="..." required min="0" max="999999999999")
+
+            .input-container
+              label(for="birthdate") Ano de nascimento
+              input(type="date" name="birthdate" placeholder="dd/mm/aaaa" max=formattedToday required)
+
+          input(type="submit" value="Submit")
+
+      if student
+        section.overlay-response
+          .container
+            button.close-button(onclick="location.href='/'") x
+
+            .title
+              h2 Aluno:
+              h2= student.name
+
+            .student-items
+              p.label Matrícula:
+              p= student.number
+
+              p.label Data de nascimento:
+              p= student.birthdate
+
+              p.label Idade:
+              p= student.age
+
+    footer
+      p Desenvolvido por
+        strong Henrique Tavares Aguiar
+
+      a(href="https://github.com/henrique-tavares" target="_blank" rel="noopener noreferrer") 
+        img(src="GitHub-Mark-Light-32px.png" alt="GitHub")
