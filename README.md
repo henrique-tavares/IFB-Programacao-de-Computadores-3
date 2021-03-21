@@ -8,6 +8,12 @@
 
 ---
 
+## Projetos
+
+- [Trabalho 5](https://github.com/henrique-tavares/IFB-PC3-Trabalho5) 
+- [Semana de Pratica 3](https://github.com/henrique-tavares/IFB-PC3-Semana-De-Pratica-3)
+- [Semana de Pratica 4](https://github.com/henrique-tavares/IFB-PC3-Semana-De-Pratica-4)
+
 ## Ementa
 
 Programação orientada a objetos: polimorfismo, interfaces, composição e agregação. Interface gráfica com o usuário (GUI) e seu uso no desenvolvimento de programas. Programação associada a eventos. Sistemas que utilizam persistência de dados.
