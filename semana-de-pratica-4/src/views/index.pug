@@ -37,9 +37,9 @@ html(lang="pt-br")
           input(type="submit" value="Submit")
 
       if student
-        section.overlay-response
+        section.modal
           .container
-            button.close-button(onclick="location.href='/'") x
+            button.close-button &times;
 
             .title
               h2 Aluno:
@@ -54,6 +54,16 @@ html(lang="pt-br")
 
               p.label Idade:
               p= student.age
+
+        script.
+          const modal = document.getElementsByClassName('modal')[0];
+          window.onclick = (e) => {
+            if (e.target == modal) {
+              location.href = '/';
+            }
+          }
+          const closeButton = document.getElementsByClassName('close-button')[0];
+          closeButton.onclick = () => location.href = '/';
 
     footer
       p Desenvolvido por

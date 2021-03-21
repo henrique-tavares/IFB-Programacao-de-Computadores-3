@@ -147,7 +147,7 @@ main .form input[type=submit]:hover {
   cursor: pointer;
 }
 
-main .overlay-response {
+main .modal {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.75);
@@ -160,8 +160,9 @@ main .overlay-response {
   z-index: 0;
 }
 
-main .overlay-response .close-button {
+main .modal .close-button {
   align-self: flex-end;
+  font-size: 18px;
   border: 2px solid #2BC866;
   background: #2BC866;
   color: #FFF;
@@ -171,9 +172,16 @@ main .overlay-response .close-button {
   margin-right: -10px;
   cursor: pointer;
   outline: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
-main .overlay-response .container {
+main .modal .close-button:hover {
+  background: #FFF;
+  color: #2BC866;
+}
+
+main .modal .container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -188,7 +196,7 @@ main .overlay-response .container {
   z-index: 10;
 }
 
-main .overlay-response .container .title {
+main .modal .container .title {
   font-size: 20px;
   font-weight: bold;
   color: #1F1F1F;
@@ -201,15 +209,15 @@ main .overlay-response .container .title {
   justify-content: center;
 }
 
-main .overlay-response .container h2:first-child {
+main .modal .container h2:first-child {
   margin-right: 5px;
 }
 
-main .overlay-response .container h2 {
+main .modal .container h2 {
   word-break: normal;
 }
 
-main .overlay-response .student-items {
+main .modal .student-items {
   display: grid;
   grid-template-columns: auto auto;
   width: auto;
@@ -223,7 +231,7 @@ main .overlay-response .student-items {
   font-size: 16px;
 }
 
-main .overlay-response .student-items .label {
+main .modal .student-items .label {
   text-align: right;
   font-weight: bold;
 }
